@@ -13,7 +13,7 @@ import java.util.HashMap;
 public enum OverlaySettingsSerializers {
     INSTANCE;
 
-    private HashMap<String, OverlaySettingsSerialization> mByJSONName = new HashMap<>();
+    private HashMap<String, OverlaySettingsSerialization> mByJSONName = new HashMap<String, OverlaySettingsSerialization>();
 
     private void registerMapping(OverlaySettingsSerialization overlaySettingsSerialization) {
         mByJSONName.put(overlaySettingsSerialization.getJsonName(), overlaySettingsSerialization);
