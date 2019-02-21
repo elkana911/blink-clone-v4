@@ -56,7 +56,116 @@
 
         <source-file src="src/android/java/com/phonegap/plugins/blinkid/BlinkIdScanner.java" target-dir="src/com/phonegap/plugins/blinkid" />
         <source-file src="src/android/java/com/phonegap/plugins/blinkid/FakeR.java" target-dir="src/com/phonegap/plugins/blinkid" />
-        
+                <!-- ANDROID SOURCE FILES BEGIN -->
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/RecognizerType.java" target-dir="src/com/phonegap/plugins/blinkid" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/overlays/OverlaySettingsSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/overlays" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/overlays/OverlaySettingsSerializers.java" target-dir="src/com/phonegap/plugins/blinkid/overlays" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/overlays/serialization/DocumentVerificationOverlaySettingsSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/overlays/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/overlays/serialization/DocumentOverlaySettingsSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/overlays/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/overlays/serialization/BarcodeOverlaySettingsSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/overlays/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/RecognizerSerializers.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/RecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MalaysiaIkadFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SerializationUtils.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SpainDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/UnitedArabEmiratesIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SwitzerlandIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/ColombiaIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CzechiaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/AustraliaDlBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SwitzerlandDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SuccessFrameGrabberRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/AustraliaDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/GermanyDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/KuwaitIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MoroccoIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MalaysiaMyKadBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/AustriaPassportRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/GermanyDlBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SwitzerlandPassportRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/VinRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/UnitedArabEmiratesDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/JordanIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SwitzerlandIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/GermanyIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MrtdRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MalaysiaMyKasFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MalaysiaMyKadFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/Pdf417RecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/ElitePaymentCardCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/GermanyCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/ColombiaDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SloveniaIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/PolandIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/PolandIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SlovakiaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/PaymentCardBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CyprusIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/BruneiIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/ElitePaymentCardFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CyprusIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MrtdCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/EgyptIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/JordanCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/KuwaitIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CzechiaCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CroatiaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SlovakiaCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/ColombiaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SimNumberRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/BruneiResidencePermitBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SingaporeIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/BruneiResidencePermitFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MalaysiaMyPrFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/GermanyIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SerbiaIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/IrelandDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CyprusOldIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/HongKongIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SingaporeIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CroatiaIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/UnitedArabEmiratesIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/BlinkIDSerializationUtils.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SingaporeCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/JordanIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/RomaniaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/GermanyPassportRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/UsdlRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SloveniaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/ItalyDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/GermanyIdOldRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/PaymentCardFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/ElitePaymentCardBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SloveniaCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SingaporeDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SerbiaCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/EudlRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CroatiaCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SingaporeChangiEmployeeIdRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/DocumentFaceRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SerbiaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/AustriaDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/AustriaIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MexicoVoterIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/AustriaCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/PolandCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MalaysiaDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/PaymentCardCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CyprusOldIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MalaysiaMyTenteraFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/BruneiIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/AustriaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/IndonesiaIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SwedenDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/CzechiaIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/SlovakiaIdBackRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/NewZealandDlFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/UsdlCombinedRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/BarcodeRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <source-file src="src/android/java/com/phonegap/plugins/blinkid/recognizers/serialization/MoroccoIdFrontRecognizerSerialization.java" target-dir="src/com/phonegap/plugins/blinkid/recognizers/serialization" />
+        <!-- ANDROID SOURCE FILES END -->
+
+
         <source-file src="src/android/res/raw/beep.mp3" target-dir="res/raw" />
         <source-file src="src/android/res/layout/splash_screen.xml" target-dir="res/layout" />
 
