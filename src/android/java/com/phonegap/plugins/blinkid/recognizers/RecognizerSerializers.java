@@ -13,8 +13,8 @@ import java.util.HashMap;
 public enum RecognizerSerializers {
     INSTANCE;
 
-    private HashMap<String, RecognizerSerialization> mByJSONName = new HashMap<>();
-    private HashMap<Class<?>, RecognizerSerialization> mByClass = new HashMap<>();
+    private HashMap<String, RecognizerSerialization> mByJSONName = new HashMap<String, RecognizerSerialization>();
+    private HashMap<Class<?>, RecognizerSerialization> mByClass = new HashMap<Class<?>, RecognizerSerialization>();
 
     private void registerMapping( RecognizerSerialization recognizerSerialization ) {
         mByJSONName.put(recognizerSerialization.getJsonName(), recognizerSerialization);
