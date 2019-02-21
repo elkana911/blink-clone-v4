@@ -95,12 +95,16 @@ public class BlinkIdScanner extends CordovaPlugin {
     }
 
     private void setLicense( JSONObject jsonLicense ) throws JSONException {
+		final CordovaPlugin that = this;
+		
         MicroblinkSDK.setShowTimeLimitedLicenseWarning(
                 jsonLicense.optBoolean("showTimeLimitedLicenseKeyWarning", true)
         );
         String androidLicense = jsonLicense.getString("android");
         String licensee = jsonLicense.optString("licensee", null);
-        Context context = cordova.getContext();
+        //Context context = cordova.getContext();
+		Context context = that.cordova.getActivity().getBaseContext();
+		
         if (licensee == null) {
             MicroblinkSDK.setLicenseKey(androidLicense, context);
         } else {
