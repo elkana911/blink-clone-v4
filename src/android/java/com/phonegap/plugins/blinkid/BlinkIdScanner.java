@@ -16,8 +16,8 @@ import com.microblink.MicroblinkSDK;
 import com.microblink.intent.IntentDataTransferMode;
 import com.microblink.entities.recognizers.RecognizerBundle;
 import com.microblink.uisettings.UISettings;
-import com.phonegap.plugins.microblink.overlays.OverlaySettingsSerializers;
-import com.phonegap.plugins.microblink.recognizers.RecognizerSerializers;
+import com.phonegap.plugins.blinkid.overlays.OverlaySettingsSerializers;
+import com.phonegap.plugins.blinkid.recognizers.RecognizerSerializers;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
