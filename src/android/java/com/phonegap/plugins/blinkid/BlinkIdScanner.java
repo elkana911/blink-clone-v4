@@ -66,6 +66,8 @@ public class BlinkIdScanner extends CordovaPlugin {
      */
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
+		final CordovaPlugin that = this;
+		
         mCallbackContext = callbackContext;
 
         try {
@@ -79,9 +81,9 @@ public class BlinkIdScanner extends CordovaPlugin {
                 UISettings overlaySettings = OverlaySettingsSerializers.INSTANCE.getOverlaySettings(jsonOverlaySettings, mRecognizerBundle);
 
                 // unable to use ActivityRunner because we need to use cordova's activity launcher
-                Intent intent = new Intent(this.cordova.getContext(), overlaySettings.getTargetActivity());
+                Intent intent = new Intent(that.cordova.getActivity().getBaseContext(), overlaySettings.getTargetActivity());
                 overlaySettings.saveToIntent(intent);
-                this.cordova.startActivityForResult(this, intent, REQUEST_CODE);
+                this.cordova.startActivityForResult(that, intent, REQUEST_CODE);
             } else {
                 return false;
             }
