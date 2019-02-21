@@ -6,7 +6,7 @@
  * Copyright (c) 2011, IBM Corporation
  * Copyright (c) 2013, Maciej Nux Jaros
  */
-package com.phonegap.plugins.microblink;
+package com.phonegap.plugins.blinkid;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,7 +25,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MicroblinkScanner extends CordovaPlugin {
+public class BlinkIdScanner extends CordovaPlugin {
 
     private static final int REQUEST_CODE = 1337;
 
@@ -40,7 +40,7 @@ public class MicroblinkScanner extends CordovaPlugin {
     /**
      * Constructor.
      */
-    public MicroblinkScanner() {
+    public BlinkIdScanner() {
     }
 
     /**
