@@ -79,11 +79,10 @@ BlinkID.prototype.scanIDCard = function (successCallback, errorCallback, overlay
                 }
             }    
         },
-        errorCallback, 'BlinkIDScanner', 'scanIDCard', [overlaySettings, recognizerCollection, licenses]);
+        errorCallback, 'BlinkIdScanner', 'scanIDCard', [overlaySettings, recognizerCollection, licenses]);
 };
 
 BlinkID.prototype.scanWithCamera = function (successCallback, errorCallback, overlaySettings, recognizerCollection, licenses) {
-    console.log("MANTABBBBBBB");
 	
     if (errorCallback == null) {
         errorCallback = function () {
@@ -128,7 +127,7 @@ BlinkID.prototype.scanWithCamera = function (successCallback, errorCallback, ove
                 }
             }    
         },
-        errorCallback, 'BlinkIDScanner', 'scanWithCamera', [overlaySettings, recognizerCollection, licenses]);
+        errorCallback, 'BlinkIdScanner', 'scanWithCamera', [overlaySettings, recognizerCollection, licenses]);
 };
 
 
