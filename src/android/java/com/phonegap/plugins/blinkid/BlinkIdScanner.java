@@ -72,11 +72,6 @@ public class BlinkIdScanner extends CordovaPlugin {
 		
         mCallbackContext = callbackContext;
 
-		if (true){
-		 mCallbackContext.error("JSON error: ALAMAAKKKK");
-            return false;
-		}	
-
         try {
             if (action.equals(SCAN_WITH_CAMERA)) {
                 JSONObject jsonOverlaySettings = args.getJSONObject(0);
