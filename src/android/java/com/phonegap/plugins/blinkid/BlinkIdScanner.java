@@ -67,9 +67,15 @@ public class BlinkIdScanner extends CordovaPlugin {
      */
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
+
 		final CordovaPlugin that = this;
 		
         mCallbackContext = callbackContext;
+
+		if (true){
+		 mCallbackContext.error("JSON error: ALAMAAKKKK");
+            return false;
+		}	
 
         try {
             if (action.equals(SCAN_WITH_CAMERA)) {
