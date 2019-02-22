@@ -29,6 +29,7 @@ public class BlinkIdScanner extends CordovaPlugin {
 
     private static final int REQUEST_CODE = 1337;
 
+    private static final String SCAN_ID_CARD = "scanIDCard";
     private static final String SCAN_WITH_CAMERA = "scanWithCamera";
     private static final String CANCELLED = "cancelled";
 
@@ -84,7 +85,21 @@ public class BlinkIdScanner extends CordovaPlugin {
                 Intent intent = new Intent(that.cordova.getActivity().getBaseContext(), overlaySettings.getTargetActivity());
                 overlaySettings.saveToIntent(intent);
                 this.cordova.startActivityForResult(that, intent, REQUEST_CODE);
-            } else {
+            } else if (action.equals(SCAN_ID_CARD)) {
+                JSONObject jsonOverlaySettings = args.getJSONObject(0);
+                JSONObject jsonRecognizerCollection = args.getJSONObject(1);
+                JSONObject jsonLicenses = args.getJSONObject(2);
+
+                setLicense(jsonLicenses);
+                mRecognizerBundle = RecognizerSerializers.INSTANCE.deserializeRecognizerCollection(jsonRecognizerCollection);
+                UISettings overlaySettings = OverlaySettingsSerializers.INSTANCE.getOverlaySettings(jsonOverlaySettings, mRecognizerBundle);
+
+                // unable to use ActivityRunner because we need to use cordova's activity launcher
+                Intent intent = new Intent(that.cordova.getActivity().getBaseContext(), overlaySettings.getTargetActivity());
+                overlaySettings.saveToIntent(intent);
+                this.cordova.startActivityForResult(that, intent, REQUEST_CODE);
+				
+			} else {
                 return false;
             }
             return true;
